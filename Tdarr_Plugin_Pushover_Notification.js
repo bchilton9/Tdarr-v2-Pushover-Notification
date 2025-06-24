@@ -1,11 +1,3 @@
-// Rules disabled for example purposes
-/* eslint max-len: 0 */ // --> OFF
-/* eslint no-unused-vars: 0 */ // --> OFF
-/* eslint global-require: 0 */ // --> OFF
-/* eslint import/no-extraneous-dependencies: 0 */ // --> OFF
-/* eslint no-console: 0 */ // --> OFF
-/* eslint no-param-reassign: 0 */ // --> OFF
-
 // List any npm dependencies which the plugin needs, they will be auto installed when the plugin runs:
 module.exports.dependencies = [
   'import-fresh',
@@ -98,20 +90,15 @@ const plugin = (file, librarySettings, inputs, otherArguments) => {
 
 const path = require('path');
 
+// For Tdarr v2, use file.file to get the actual file path
 const filePath = file.file;
 const fileName = filePath ? path.basename(filePath) : 'Unknown file';
 
-const sizeBefore = formatBytes(file.size);
-const sizeAfter = formatBytes(file.outputFileSize);
-
-let message = `Job completed for file: ${fileName}
-Size before: ${sizeBefore}
-Size after: ${sizeAfter}`;
-
+// Build message
+let message = `Job completed for file: ${fileName}`;
 if (!transcodingSuccess) {
   message = `Job failed for file: ${fileName}`;
 }
-
 
   // Send the Pushover notification
   sendPushoverNotification(message, pushover_user_key, pushover_app_token);
