@@ -1,11 +1,10 @@
 # Tdarr Plugin - Pushover Notification
 
-A custom Tdarr v2 plugin that sends a [Pushover](https://pushover.net/) notification when a video processing job completes. The notification includes the filename, file size before and after transcoding, and status (success or failure).
+A custom Tdarr v2 plugin that sends a [Pushover](https://pushover.net/) notification when a video processing job completes. The notification includes the filename, and status (success or failure).
 
 ## 🔧 Features
 
 - Sends mobile push notifications via Pushover
-- Includes filename and size before/after processing
 - Notifies on both success and failure
 - Uses native Node.js `https` module (no external HTTP library)
 
@@ -47,8 +46,6 @@ The plugin uses the following logic to determine the file name and size:
 
 ```js
 const fileName = path.basename(file.file); // Tdarr v2
-const sizeBefore = formatBytes(file.size);
-const sizeAfter = formatBytes(file.outputFileSize);
 ```
 
 You can extend the message to include:
