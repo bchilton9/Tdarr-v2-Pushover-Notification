@@ -68,6 +68,7 @@ This plugin is provided as-is under the MIT License. No affiliation with Pushove
 
 ---
 See more projects at [ChilSoft](https://chilsoft.com/)
+
 **Author:** Byron  
 **Version:** 1.0  
 **Tags:** pushover, notification, tdarr, plugin, transcode
