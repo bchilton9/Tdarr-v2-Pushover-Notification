@@ -67,6 +67,7 @@ To test the plugin:
 This plugin is provided as-is under the MIT License. No affiliation with Pushover or Tdarr.
 
 ---
+
 See more projects at [ChilSoft](https://chilsoft.com/)
 
 **Author:** Byron  
