@@ -66,13 +66,9 @@ To test the plugin:
 
 This plugin is provided as-is under the MIT License. No affiliation with Pushover or Tdarr.
 
-—
-
 ## 🛠 Built By
 
 [ChilSoft.com](https://chilsoft.com)
-
-—
 
 ## ⚠️ Disclaimer
 
@@ -82,7 +78,5 @@ Use any code, tools, or instructions at your own risk.
 We are **not responsible** for any damage to your device, data loss, or unintended consequences.
 
 Always proceed with care — and make backups.
-
-—
 
 © **2025 ChilSoft**. All rights reserved.
