@@ -66,9 +66,9 @@ To test the plugin:
 
 This plugin is provided as-is under the MIT License. No affiliation with Pushover or Tdarr.
 
-## 🛠 Built By
+## 🛠 Made By
 
-[ChilSoft.com](https://chilsoft.com)
+[ChilSoft.com](https://chilsoft.com) with caffeine and questionable commits.
 
 ## ⚠️ Disclaimer
 
