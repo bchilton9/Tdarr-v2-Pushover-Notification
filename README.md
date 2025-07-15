@@ -2,11 +2,15 @@
 
 A custom Tdarr v2 plugin that sends a [Pushover](https://pushover.net/) notification when a video processing job completes. The notification includes the filename, and status (success or failure).
 
+___
+
 ## 🔧 Features
 
 - Sends mobile push notifications via Pushover
 - Notifies on both success and failure
 - Uses native Node.js `https` module (no external HTTP library)
+
+___
 
 ## 🚀 Installation
 
@@ -17,12 +21,16 @@ A custom Tdarr v2 plugin that sends a [Pushover](https://pushover.net/) notifica
 
 > ✅ You don’t need to install any extra packages manually — the plugin auto-installs its dependencies.
 
+___
+
 ## 🔐 Inputs Required
 
 - `pushover_user_key`: Your personal Pushover User Key.
 - `pushover_app_token`: Your application's API Token.
 
 You can get these from your [Pushover dashboard](https://pushover.net/).
+
+___
 
 ## 📤 Notification Example
 
@@ -40,6 +48,8 @@ If the job fails:
 Job failed for file: example_movie.mkv
 ```
 
+___
+
 ## 🛠 Customization
 
 The plugin uses the following logic to determine the file name and size:
@@ -54,6 +64,8 @@ You can extend the message to include:
 - Codec/resolution (from `file.ffProbeData`)
 - Priority levels or custom sounds (see [Pushover API docs](https://pushover.net/api))
 
+___
+
 ## 🧪 Testing
 
 To test the plugin:
@@ -62,13 +74,19 @@ To test the plugin:
 2. Make sure a successful transcode occurs.
 3. Check your Pushover app for the notification.
 
+___
+
 ## 🧾 License
 
 This plugin is provided as-is under the MIT License. No affiliation with Pushover or Tdarr.
 
+___
+
 ## 🛠 Made By
 
 [ChilSoft.com](https://chilsoft.com) with caffeine and questionable commits.
+
+___
 
 ## ⚠️ Disclaimer
 
